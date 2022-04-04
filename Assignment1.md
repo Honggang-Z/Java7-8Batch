@@ -49,7 +49,7 @@
 ### 13.	Write a program to implement the following activity diagram:
 ![img.png](a1q13.png)
 ```java
-public class Assignment1Q13 {
+public class Assignment1.Assignment1Q13 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("enter an integer: ");
