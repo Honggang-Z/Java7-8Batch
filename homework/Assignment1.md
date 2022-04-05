@@ -47,7 +47,7 @@
 * Long.parseLong()
 * Use regular expressions
 ### 13.	Write a program to implement the following activity diagram:
-![img.png](a1q13.png)
+![img.png](../a1q13.png)
 ```java
 public class Assignment1.Assignment1Q13 {
     public static void main(String[] args) {
