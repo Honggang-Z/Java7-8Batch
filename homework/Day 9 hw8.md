@@ -10,6 +10,7 @@
 
 #### Example
 ![img.png](Optimistic Locking.png)
+
 So, when reading the account record, both users read its current version. However, when Bob changes the account balance, he also changes the version from 1 to 2.
 
 Afterward, when Alice wants to change the account balance, her UPDATE statement will not match any record since the version column value is no longer 1, but 2.
@@ -25,6 +26,7 @@ So, the Lost Update is prevented by rolling back the subsequent transactions tha
 
 #### Example
 ![img.png](Pessimistic Locking.png)
+
 In the diagram above, both Alice and Bob will acquire a read (shared) lock on the account table row upon reading it.
 
 Because both Alice and Bob hold the read (shared) lock on the account record with the identifier value of 1, neither of them can change it until one releases the read lock they acquired. This is because a write operation requires a write (exclusive) lock acquisition, and read (shared) locks prevent write (exclusive) locks.
