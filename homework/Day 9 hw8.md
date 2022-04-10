@@ -9,7 +9,7 @@
   * If the two states differ, a conflicting update was made, and the transaction will be **rolled back**.
 
 #### Example
-![img.png](Optimistic Locking.png)
+![img.png](./Optimistic Locking.png)
 
 So, when reading the account record, both users read its current version. However, when Bob changes the account balance, he also changes the version from 1 to 2.
 
@@ -25,7 +25,7 @@ So, the Lost Update is prevented by rolling back the subsequent transactions tha
 * The disadvantage is that resource is locked from when you start the transaction until you finished the transaction. During that time the record is not available to other transactions.
 
 #### Example
-![img.png](Pessimistic Locking.png)
+![img.png](./Pessimistic Locking.png)
 
 In the diagram above, both Alice and Bob will acquire a read (shared) lock on the account table row upon reading it.
 
