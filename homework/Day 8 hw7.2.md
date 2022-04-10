@@ -53,4 +53,3 @@ So, **Materialized views** are used mostly with data warehousing or business int
 * https://stackoverflow.com/questions/5194995/what-is-the-difference-between-a-stored-procedure-and-a-view
 * https://techdifferences.com/difference-between-view-and-materialized-view.html
 * https://www.java67.com/2012/11/what-is-difference-between-view-vs-materialized-view-database-sql.html
-* 
