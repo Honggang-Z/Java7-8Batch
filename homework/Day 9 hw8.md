@@ -1,6 +1,6 @@
 # Day 9 homework 8
 
-### 8.1 optimistic lock and pessimistic lock
+## 8.1 optimistic lock and pessimistic lock
 #### Optimistic Lock
 * Optimistic Locking is a when you read a record, take note of a version number and check that the version hasn’t changed before you write the record back. 
 * When you write the record back you filter the update on the version to make sure it’s atomic.
@@ -35,7 +35,7 @@ For this reason, Bob’s UPDATE blocks until Alice releases the shared lock she 
 * https://medium.com/@saraswat.prateek1000/optimistic-v-s-pessimistic-locks-6be05ae97391
 * https://vladmihalcea.com/optimistic-vs-pessimistic-locking/
 
-### 8.1 optimistic lock and pessimistic lock
+## 8.2
 #### Transaction
 A transaction is a logical unit of work that contains one or more SQL statements. A transaction is an atomic unit. The effects of all the SQL statements in a transaction can be either all committed (applied to the database) or all rolled back (undone from the database).
 
@@ -89,7 +89,7 @@ Livelock occurs when two or more processes continually repeat the same interacti
 * https://www.geeksforgeeks.org/deadlock-prevention/
 * https://www.geeksforgeeks.org/deadlock-starvation-and-livelock/
 
-### 8.3 Saga
+## 8.3 Saga
 Saga simply sacrifices atomicity and relies on eventual consistency.
 
 The Saga design pattern is a way to manage data consistency across microservices in distributed transaction scenarios. A saga is a sequence of transactions that updates each service and publishes a message or event to trigger the next transaction step. If a step fails, the saga executes compensating transactions that counteract the preceding transactions.
